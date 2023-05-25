@@ -7,7 +7,7 @@ Where are we?<br>
 
 A simple boolean game of chance for the web (HTML+' Fillable Forms/CGI/<b>Perl 4</b>)
 
-## Try It Out
+## Live Demo
 
 http://joz3d.net/cgi-bin/door.pl
 
