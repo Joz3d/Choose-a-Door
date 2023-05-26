@@ -12,6 +12,7 @@ $scriptloc = "http://localhost/cgi-bin";		# Where door.pl is located
 $assetloc = "http://localhost/cgi";				# Where door graphics are
 												# 	(no trailing slashes)
 $homepage = "../index.html";					# Homepage location
+$homepage_name = "Joz's Homepage";
 
 $scorefile = "temp-door-score-".$ENV {REMOTE_ADDR};
 $nrfile = "temp-door-record-".$ENV {REMOTE_ADDR};
@@ -254,7 +255,7 @@ sub page_footer
 		<a href=\"$homepage\"><img src=\"$assetloc/back.gif\"></a>
 	</p>
 	<p align=\"center\">
-		Back to <a href=\"$homepage\">Joz's Homepage</a>
+		Back to <a href=\"$homepage\">$homepage_name</a>
 	</p>
 	</body>
 	</html>
