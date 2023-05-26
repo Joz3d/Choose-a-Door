@@ -11,7 +11,7 @@ A simple boolean game of chance for the web (HTML+' Fillable Forms/CGI/<b>Perl 4
 
 http://joz3d.net/cgi-bin/door.pl
 
-For a true retro experience, <a href="https://oldweb.today/?browser=nm2-mac#http://joz3d.net/cgi-bin/door.pl">run it in Mosaic 2</a>.
+For a true retro experience, <a href="https://oldweb.today/?browser=nm2-mac#http://joz3d.net/cgi-bin/door.pl">run it in Mosaic 2</a> _(don't forget to click on each image to load it, or go to Options -> Auto-Load Images ☺️)_
 
 ## General Comments
 
@@ -20,7 +20,7 @@ What can I say about it... it's Perl 4, so all variables are global.  It tracks 
 ## Install
 These are Apache-based instructions and will need to be adjusted respectively for other web servers.
 1. Make sure you have CGI enabled (mod_cgid)
-2. Disable web server caching of HTML and Perl scripts for this app.  One method would be creating the following `.htaccess` file in the same directory you put this app in:
+2. Disable web server caching of HTML and Perl scripts for this app.  One method would be creating the following **.htaccess** file in the same directory you put this app in:
 ```
 <filesMatch "\.(html|pl)$">
   FileETag None
@@ -32,5 +32,5 @@ These are Apache-based instructions and will need to be adjusted respectively fo
   </ifModule>
 </filesMatch>
 ```
-3. In `door.pl` set `$scriptloc`, `$assetloc`, and `$homepage` variables.  (`$scriptloc` and `$assetloc` can be the same location)
-4. Optional, but you _might_ wanna put in a daily/weekly/monthly? cronjob to delete `temp-door-*` files that are older than an hour or so (even though they are literally 1 byte a pop) just for cleanup reasons.  The script tries to do its best job of cleaning up temp files, but can't really account for mid-game quit-outs.
+3. In **door.pl** set `$scriptloc`, `$assetloc`, `$homepage`, and `$homepage_name` variables.  ($scriptloc and $assetloc can be the same location)
+4. Optional, but you _might_ wanna put in a daily/weekly/monthly? cronjob to delete **temp-door-*** files that are older than an hour or so (even though they are literally 1 byte a pop) just for cleanup reasons.  The script tries to do its best job of cleaning up temp files, but can't really account for mid-game quit-outs.
