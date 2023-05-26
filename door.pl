@@ -12,7 +12,7 @@ $scriptloc = "http://localhost/cgi-bin";		# Where door.pl is located
 $assetloc = "http://localhost/cgi";				# Where door graphics are
 												# 	(no trailing slashes)
 $homepage = "../index.html";					# Homepage location
-$homepage_name = "Joz's Homepage";
+$homepage_name = "Joz's Homepage";				# Homepage name
 
 $scorefile = "temp-door-score-".$ENV {REMOTE_ADDR};
 $nrfile = "temp-door-record-".$ENV {REMOTE_ADDR};
