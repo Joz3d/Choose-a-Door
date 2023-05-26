@@ -11,6 +11,8 @@ A simple boolean game of chance for the web (HTML+' Fillable Forms/CGI/<b>Perl 4
 
 http://joz3d.net/cgi-bin/door.pl
 
+For a true retro experience, <a href="https://oldweb.today/?browser=nm2-mac#http://joz3d.net/cgi-bin/door.pl">run it in Mosaic 2</a>.
+
 ## General Comments
 
 What can I say about it... it's Perl 4, so all variables are global.  It tracks players' sesssions by IP, which is probably the best method one came up with in '93.
